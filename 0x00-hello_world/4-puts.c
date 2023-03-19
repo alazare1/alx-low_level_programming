@@ -6,7 +6,7 @@
  *
  * The main() function initializes a character array with a message, then
  * calls the puts() function to print the message to the console.
- *
+ * @char is used to initalize the char1 variable
  * @return 0 if the program runs successfully
  */
 
