@@ -3,7 +3,7 @@
 /**
  * main - entry point it will be success when the return value is zero *
  * puts - Function to call char variable
- * Returns:return zero if the program runs
+ * return - value 0 after exit 
  */
 int main(void)
 {
