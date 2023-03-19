@@ -9,7 +9,7 @@
  * @char is used to initalize the char1 variable
  * @return 0 if the program runs successfully
  */
-
+#This is where we describe the main fuction
 int main(void)
 {
 
