@@ -1,4 +1,11 @@
 #include <stdio.h>
+/*
+The main function oversees all the code.
+
+The program will exit when it returns zero.
+
+*/
+
 
 int main(void)
 {
