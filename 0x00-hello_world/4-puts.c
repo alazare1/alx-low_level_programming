@@ -1,18 +1,17 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
+ * main - entry point it will be success when the return value is zero *
  * puts - Function to call char variable
  *
- * return - if it returns zero it a success
+ * @return - if it returns zero it a success
  * 
  */ 
 int main(void)
 {
-	char char1[] = "\"Programming is like building a multilingual puzzle";
+    char char1[] = "\"Programming is like building a multilingual puzzle";
 
-	puts(char1);
+    puts(char1);
 
-	return (0);
+    return (0);
 }
