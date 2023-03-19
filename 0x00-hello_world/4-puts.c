@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - entry point it will be success when the return value is zero *
- * puts - Function to call char variable
- * return - value 0 after exit 
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
