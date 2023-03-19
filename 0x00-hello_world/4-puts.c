@@ -1,15 +1,18 @@
 #include <stdio.h>
-/*
-*The main function oversees all the code.
-*
-*The program will exit when it returns zero.
-*
-*/
 
+/*
+ * This program demonstrates the use of the puts() function to print a message
+ * to the console.
+ *
+ * The main() function initializes a character array with a message, then
+ * calls the puts() function to print the message to the console.
+ *
+ * @return 0 if the program runs successfully
+ */
 
 int main(void)
 {
-/* This is the main function */
+
 char char1[] = "\"Programming is like building a multilingual puzzle";
 
 puts(char1);
