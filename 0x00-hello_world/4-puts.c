@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-/*
+/**
  * This program demonstrates the use of the puts() function to print a message
  * to the console.
- *
+ *main - Entry point
  * main - initializes a character array with a message, then
  * calls the puts() function to print the message to the console.
  *
