@@ -1,15 +1,14 @@
 #include <stdio.h>
 
 /**
- * This program demonstrates the use of the puts() function to print a message
- * to the console.
- *main - Entry point
- * main - initializes a character array with a message, then
- * calls the puts() function to print the message to the console.
+ * main - Entry point
  *
- * Return: 0 if the program runs successfully
- */
-int main(void)/*this is the main function */
+ * puts - Function to call char variable
+ *
+ * return - if it returns zero it a success
+ * 
+ */ 
+int main(void)
 {
 	char char1[] = "\"Programming is like building a multilingual puzzle";
 
