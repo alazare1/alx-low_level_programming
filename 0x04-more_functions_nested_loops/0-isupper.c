@@ -1,10 +1,7 @@
 #include "main.h"
 
-int _isupper(int c);
-
-
-/**
- * main - check the code.
+ /**
+ *main - Entry point
  *
  * Return: Always 0.
  */
@@ -12,7 +9,7 @@ int main(void)
 {       
         char c = 'A';
 
-	if (c>='A' && c<='Z')
+	if (_isupper(c))
 	{
  		return 1;
 	}
