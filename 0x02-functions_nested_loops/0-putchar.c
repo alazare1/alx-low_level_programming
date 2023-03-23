@@ -3,7 +3,9 @@
 /**
  * _putchar - prints characters
  * @c - allows us to use character
- * main - Entry point
+ * 
+ *main - Entry point to use _putchar function
+ *
  * Return: returns 0 to exit
  */
 
