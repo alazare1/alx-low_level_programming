@@ -2,14 +2,10 @@
 
 /**
  * main - Entry point
- *
  * @c - initalize at a and print character to z
  * print_alphabet - function to print alphabet
- *
- * Return: returns 0 
+ * Return: returns 0
  */
-
-
 void print_alphabet(void)
 {
         char c = 'a';
@@ -20,5 +16,5 @@ void print_alphabet(void)
                 c++;
         }
 
-        _putchar('\n');
+	 _putchar('\n');
 }
