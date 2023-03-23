@@ -1,9 +1,5 @@
 #include "main.h"
-
 /**
- * _putchar - prints characters
- * @c - allows us to use character
- * 
  *main - Entry point to use _putchar function
  *
  * Return: returns 0 to exit
@@ -20,6 +16,6 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-
+	
 	return (0);
 }
