@@ -2,7 +2,7 @@
 
  /**
  *main - Entry point
- *
+ *_isupper - shows upper and lower case
  * Return: Always 0.
  */
 int main(void)
