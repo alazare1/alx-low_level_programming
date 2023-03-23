@@ -3,6 +3,7 @@
  /**
  *main - Entry point
  *_isupper - shows upper and lower case
+ *@c - character we will print
  * Return: Always 0.
  */
 int main(void)
