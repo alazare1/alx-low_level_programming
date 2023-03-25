@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  *print_sign - function checks for sign of num
  *@n: integer that is passed 
