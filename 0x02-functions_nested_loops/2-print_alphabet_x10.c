@@ -1,23 +1,21 @@
 #include "main.h"
-
 /**
- * main - Entry point
- * print_alphabet - function for A to Z
+ * print_alphabet - prints alphabet a-z 10 times
  * @c - character
- * Return: Always 0
+ * Return: putchar (c) values with new lines
  */
 
-void print_alphabet_x10(void) {
-	
+void print_alphabet_x10(void)
+{
 	int i = 1;
-	char c = 'A';
+	char c = 'a';
 
-	while(i<=10) {
-		while (c>='A' && c <= 'Z')
-		{	
+	while (i <= 10) {
+		while (c>='a' && c <= 'z')
+		{
 		_putchar(c);
 		c++;
-		}	
+		}
 	_putchar('\n');
 	i++;
 
