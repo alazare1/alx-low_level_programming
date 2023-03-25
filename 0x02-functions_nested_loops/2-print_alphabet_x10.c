@@ -7,13 +7,13 @@
  * Return: Always 0
  */
 
-void print_alphabet_x10(void) {
+print_alphabet_x10() {
 	
 	int i = 1;
 	char c = 'A';
 
 	while(i<=10) {
-		while (c>'A' && c <= 'Z')
+		while (c>='A' && c <= 'Z')
 		{	
 		_putchar(c);
 		c++;
