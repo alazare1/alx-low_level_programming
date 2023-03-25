@@ -4,7 +4,7 @@
  * Return: 1 for alphabet, otherwise 0
  */
 
-int_isalpha(int c)
+int _isalpha(int c)
 {
 	if(c >= 'a' && c <= 'z')
 	{
