@@ -1,6 +1,6 @@
 /**
  *_islower - returns True for lowercase, otherwise false
- *@c - passed value through _islower function
+ *c - parameter for lower case characters
  *Return:1 if true, 0 if false
  */
 
