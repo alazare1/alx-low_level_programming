@@ -1,6 +1,6 @@
 /**
  *_islower - returns True for lowercase, otherwise false
- *c - parameter for lower case characters
+ *@c:characters get passed through
  *Return:1 if true, 0 if false
  */
 
