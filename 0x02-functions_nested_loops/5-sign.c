@@ -2,7 +2,7 @@
 
 /**
  *print_sign - function checks for sign of num
- *@n: integer that is passed 
+ *@n: integer that is passed
  *Return: 1 if +, -1 if -, and 0
  */
 int print_sign(int n)
