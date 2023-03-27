@@ -1,5 +1,5 @@
 /**
- *_strcpy - Copies a string pointed to by src, into a buffer pointed to by dest.
+ *_strcpy - Copies a string pointed to by src
  *@dest: The buffer to copy the string into.
  *@src: The string to copy.
  *Return: A pointer to the destination buffer
