@@ -1,7 +1,7 @@
 #include "main.h"
 
 /*
- *_strlen - find length of string
+ * _strlen - used to find length of string
  *@s: string
  *return: value of p - s
  */
