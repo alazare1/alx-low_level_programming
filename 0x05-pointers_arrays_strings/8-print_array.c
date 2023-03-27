@@ -8,41 +8,49 @@
  */
 void print_array(int *a, int n)
 {
-    int i = 0;
-    char digit;
-    int num;
+	int i = 0;
+	char d;
+	int num, neg;
 
-    while (i < n)
-    {
-        if (i > 0)
-        {
-            _putchar(',');
-            _putchar(' ');
-        }
+	while (i < n)
+	{
+		if (i > 0)
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
 
-        num = a[i];
-        if (num == 0)
-        {
-            _putchar('0');
-            i++;
-            continue;
-        }
+		num = a[i];
+		neg = num < 0;
 
-        if (num < 0)
-        {
-            _putchar('-');
-            num *= -1;
-        }
+		if (neg)
+		{
+			_putchar('-');
+			num *= -1;
+		}
 
-        while (num > 0)
-        {
-            digit = (num % 10) + '0';
-            _putchar(digit);
-            num /= 10;
-        }
+		if (num == 0)
+		{
+			_putchar('0');
+		}
+		else
+		{
+			while (num > 0)
+			{
+				d = (num % 10) + '0';
+				_putchar(d);
+				num /= 10;
+			}
 
-        i++;
-    }
+			if (neg == 0)
+			{
+				_putchar('-');
+			}
+		}
 
-    _putchar('\n');
+		i++;
+	}
+
+	_putchar('\n');
 }
+
