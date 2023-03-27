@@ -2,27 +2,26 @@
 /**
  * puts2 - function print every other
  * @str: passed in value
- * Return: every other string printed
+ * Return: every other string prints
  */
-
-
-
 
 void puts2(char *str)
 {
 	char *p = str;
-	int count = 0;
+	int len = 0;
 
 	while (*p)
 	{
-	count++;
+	len++;
 	p++;
 	}
+
 	p = str;
-	while (*p)
+	while (len > 0)
 	{
-	_putchar(*p);
+	putchar(*p);
 	p += 2;
-}
-	_putchar('\n');
+	len -= 2;
+	}
+	putchar('\n');
 }
