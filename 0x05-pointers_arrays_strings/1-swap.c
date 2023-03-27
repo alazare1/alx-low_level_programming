@@ -1,7 +1,7 @@
 /**
  * swap_int - swaps integer values
- * @a - first integer parameter
- * @b - second integer parameter
+ * @a:first integer parameter
+ * @b:second integer parameter
  */
 
 
