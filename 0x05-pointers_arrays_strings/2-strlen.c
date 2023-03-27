@@ -1,9 +1,10 @@
 #include "main.h"
 
-/*
- * _strlen - used to find length of string
- *@s: string
- *return: value of p - s
+/**
+ * _strlen - Returns the length of a string.
+ * @s: The string to get the length of.
+ *
+ * Return: The length of the string.
  */
 
 
