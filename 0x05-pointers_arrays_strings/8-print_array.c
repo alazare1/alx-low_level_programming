@@ -7,8 +7,6 @@
  * @n: number of elements to be printed
  */
 
-
-
 void print_array(int *a, int n)
 {
 	if (n == 1)
@@ -17,4 +15,5 @@ void print_array(int *a, int n)
 		return;
 	}
 	printf("%d, ", *a);
+	print_array(a+1, n-1);
 }
