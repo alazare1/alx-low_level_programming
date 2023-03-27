@@ -1,11 +1,11 @@
 #include "main.h"
 
-/*
- *print_rev - prints reverse of the string function
- *@s:passed string
- *return: printed out string
+/**
+ * print_rev - Prints a string in reverse order, followed by a newline character.
+ * @s: A pointer to a string.
+ *
+ * Return: void.
  */
-
 
 void print_rev(char *s)
 {
