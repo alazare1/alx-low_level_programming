@@ -7,19 +7,19 @@
  */
 
 
-
 void puts_half(char *str)
 {
 	char *now = str;
+	int len;
 
 	while (*now != '\n' && *now != 0)
 	{
 	now++;
 	}
 
-	int len = now - str;
+	len = now - str;
 	int start_index = len / 2;
-	
+
 	if (len % 2 == 1)
 	{
 	start_index++;
@@ -28,8 +28,8 @@ void puts_half(char *str)
 
 	while (*now != '\n' && *now != 0)
 	{
-	_putchar(*now);
-	current++;
+	putchar(*now);
+	now++;
 	}
-	_putchar('\n');
+	putchar('\n');
 }
