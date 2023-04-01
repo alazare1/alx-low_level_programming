@@ -15,9 +15,11 @@ int main(void)
 
 	printf("Last digit of %d is",n);
 
+	n = n%10;
+
 	if (n>5)
 	{
-	 printf(" %d greater than 5\n", n);
+	 printf(" %d and greater than 5\n", n);
 	}
 	else if (n>0 && n<=6)
 	{
