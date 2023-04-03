@@ -8,12 +8,12 @@ int main(void)
 {
 	int index = 0;
 
-	while (n >= 0 && n < 10)
+	while (index >= 0 && index < 10)
 	{
 		putchar(index + '0');
 		index++;
 	}
-	putchar("/n");
+	putchar('\n');
 
 	return (0);
 }
