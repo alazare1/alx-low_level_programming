@@ -1,3 +1,13 @@
+/**
+ * _sqrt_helper - checks if values below y are 
+ * sqrt of n
+ * @n: int, square
+ * @y: int, potential sqrts
+ *
+ * Return: On success, the sqrt of n (as an int)
+ * On failure, -1
+ */
+
 int _sqrt_helper(int n, int y)
 {
     if (y > 0)
@@ -17,6 +27,12 @@ int _sqrt_helper(int n, int y)
     }
 }
 
+/**
+ * _sqrt_recursion - finds the sqrt of a number
+ * @n: square
+ *
+ * Return: int corresponding to sqrt
+ */
 int _sqrt_recursion(int n)
 {
     if (n == 1 || n == -1)

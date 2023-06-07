@@ -1,3 +1,12 @@
+/**
+ * _pow_recursion - gets the value x^y
+ * for int x and y
+ * @x: int, base
+ * @y: int, power
+ *
+ * Return: int corresponding to x^y
+ */
+
 int _pow_recursion(int x, int y)
 {
     if (y > 0)
