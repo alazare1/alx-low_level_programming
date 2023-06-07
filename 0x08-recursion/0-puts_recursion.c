@@ -1,11 +1,15 @@
-char* _puts_recursion(char *s)
+#include "main.h"
+
+void _puts_recursion(char *s)
 {
-	if ()
+	if (*s)
 	{
-		
+
+		_putchar(s[0]);
+		_puts_recursion(s + 1);
 	}
 	else
 	{
-		return strcat(s[0]*, _puts_recursion(s+1))
+		_putchar('\n');
 	}
 }
