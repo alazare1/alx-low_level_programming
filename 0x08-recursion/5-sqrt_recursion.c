@@ -18,7 +18,7 @@ int _sqrt_helper(int n, int y)
         }
         else
         {
-            return (_sqrt_helper(n, y-1));
+            return (_sqrt_helper(n, y / 2));
         }
     }
     else
@@ -44,3 +44,5 @@ int _sqrt_recursion(int n)
         return (_sqrt_helper(n, n / 2));
     }
 }
+
+_sqrt_recursion(16777216)
