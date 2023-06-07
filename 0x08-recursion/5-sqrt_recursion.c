@@ -44,5 +44,3 @@ int _sqrt_recursion(int n)
         return (_sqrt_helper(n, n / 2));
     }
 }
-
-_sqrt_recursion(16777216)
