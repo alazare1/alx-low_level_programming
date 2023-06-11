@@ -1,13 +1,13 @@
 /**
- * _memset - checks if a character is uppercase
- * @s: the character to check
- * @b: the character to check
- * @n: the character to check
+ * _memset - repeats character b for n spots in s
+ * @s: character string
+ * @b: character
+ * @n: number of repetitions of character b
  *
- * Return: 0 if lower case and 1 if upper case 
+ * Return: s
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-    return s;
+	return (s);
 }
