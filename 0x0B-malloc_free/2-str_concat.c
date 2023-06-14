@@ -54,7 +54,7 @@ char *str_concat(char *s1, char *s2)
             sub_pointer += 1;
             i++;
         }
-        ret[i] = '\0';
+        ret[i + size_1] = '\0';
     }
 
     return ret;
