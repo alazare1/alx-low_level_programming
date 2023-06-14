@@ -31,7 +31,7 @@ char *argstostr(int ac, char **av)
 {
     char * retstr;
     int count = 0;
-    int i = 1;
+    int i = 0;
 
     if ((ac <= 1) || (av == NULL))
     {
@@ -49,7 +49,7 @@ char *argstostr(int ac, char **av)
     {
         char * dest = retstr;
         char * wordpoi;
-        i = 1;
+        i = 0;
 
         while (i < ac)
         {
