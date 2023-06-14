@@ -1,4 +1,13 @@
 #include <stdlib.h>
+
+/**
+ * _str_concat - creates new string of concatenation of s1 and s2
+ * @s1: The character to print
+ * @s2: size of the array
+ * Return: On success return pointer to char array
+ * On error, or s1,s2 == NULL, return NULL
+ */
+
 char *str_concat(char *s1, char *s2)
 {
 
@@ -24,7 +33,7 @@ char *str_concat(char *s1, char *s2)
         }
     }
 
-    ret = malloc(sizeof(char) * (size_1 + size_2));
+    ret = malloc(sizeof(char) * (size_1 + size_2) + 1);
 
     if (ret != NULL)
     {
@@ -45,6 +54,7 @@ char *str_concat(char *s1, char *s2)
             sub_pointer += 1;
             i++;
         }
+        ret[i] = '\0';
     }
 
     return ret;

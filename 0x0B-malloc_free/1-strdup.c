@@ -1,4 +1,12 @@
 #include <stdlib.h>
+
+/**
+ * _strdup - creates duplicate string
+ * @str: The character to print
+ * Return: On success return pointer to char array
+ * On error, or str == NULL, return NULL
+ */
+
 char *_strdup(char *str)
 {
     char * sub_pointer = str;
@@ -17,7 +25,7 @@ char *_strdup(char *str)
         sub_pointer += 1;
     }
 
-    duplicate = malloc(sizeof(str[0]) * size);
+    duplicate = malloc(sizeof(str[0]) * size + 1);
 
     if (duplicate  != NULL)
     {
@@ -29,6 +37,8 @@ char *_strdup(char *str)
             sub_pointer += 1;
             i++;
         }
+
+        duplicate[i] = '\0';
     }
     return duplicate;
 }
