@@ -14,7 +14,7 @@ int _strlen(char *s)
 
 	while (*p)
 	{
-	p++;
+		p++;
 	}
 	return (p - s);
 }
@@ -29,41 +29,40 @@ int _strlen(char *s)
 
 char *argstostr(int ac, char **av)
 {
-    char * retstr;
-    int count = 0;
-    int i = 0;
+	char *retstr;
+	int count = 0;
+	int i = 0;
 
-    if ((ac <= 0) || (av == NULL))
-    {
-        return NULL;
-    }
+	if ((ac <= 0) || (av == NULL))
+	{
+		return (NULL);
+	}
 
-    while (i < ac)
-    {
-        count += _strlen(av[i]) + 1;
-        i++;
-    }
-    retstr = malloc(sizeof(char) * count + 1);
+	while (i < ac)
+	{
+		count += _strlen(av[i]) + 1;
+		i++;
+	}
+	retstr = malloc(sizeof(char) * count + 1);
 
-    if (retstr != NULL)
-    {
-        char * dest = retstr;
-        char * wordpoi;
-        i = 0;
+	if (retstr != NULL)
+	{
+		char *dest = retstr;
+		char *wordpoi;
 
-        while (i < ac)
-        {
-            wordpoi = av[i];
-            while (*wordpoi != '\0')
-            {
-                *dest++ = *wordpoi++;
-            }
-             *dest++ = '\n';
-                i++;
-         }
+		i = 0;
+		while (i < ac)
+		{
+			wordpoi = av[i];
+			while (*wordpoi != '\0')
+			{
+				*dest++ = *wordpoi++;
+			}
+			*dest++ = '\n';
+			i++;
+		}
 
-        *dest = '\0';
-    }
-    return retstr;
-
+		*dest = '\0';
+	}
+	return (retstr);
 }

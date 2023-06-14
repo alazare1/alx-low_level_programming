@@ -9,36 +9,36 @@
 
 char *_strdup(char *str)
 {
-    char * sub_pointer = str;
-    int size = 0;
-    int i;
-    char * duplicate;
+	char *sub_pointer = str;
+	int size = 0;
+	int i;
+	char *duplicate;
 
-    if (str == NULL)
-    {
-        return NULL;
-    }
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 
-    while(*sub_pointer != '\0') 
-    {
-        size++;
-        sub_pointer += 1;
-    }
+	while (*sub_pointer != '\0')
+	{
+		size++;
+		sub_pointer += 1;
+	}
 
-    duplicate = malloc(sizeof(str[0]) * size + 1);
+	duplicate = malloc(sizeof(str[0]) * size + 1);
 
-    if (duplicate  != NULL)
-    {
-        i = 0;
-        sub_pointer = str;
-        while(*sub_pointer != '\0') 
-        {
-            duplicate[i] = sub_pointer[0];
-            sub_pointer += 1;
-            i++;
-        }
+	if (duplicate  != NULL)
+	{
+		i = 0;
+		sub_pointer = str;
+		while (*sub_pointer != '\0')
+		{
+			duplicate[i] = sub_pointer[0];
+			sub_pointer += 1;
+			i++;
+		}
 
-        duplicate[i] = '\0';
-    }
-    return duplicate;
+		duplicate[i] = '\0';
+	}
+	return (duplicate);
 }
