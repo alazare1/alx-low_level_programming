@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
- * _str_concat - creates new string of concatenation of s1 and s2
+ * str_concat - creates new string of concatenation of s1 and s2
  * @s1: The character to print
  * @s2: size of the array
  * Return: On success return pointer to char array
