@@ -9,12 +9,12 @@
 
 int _strlen(char *s)
 {
-    char *p = s;
+	char *p = s;
 
-    if (p == NULL)
-    {
-        return 0;
-    }
+	if (p == NULL)
+	{
+		return (0);
+	}
 
 	while (*p)
 	{
@@ -25,22 +25,24 @@ int _strlen(char *s)
 
 /**
  * string_nconcat - creates new string of concatenation of s1 and s2
- * @s1: The character to print
- * @s2: size of the array
+ * @s1: string
+ * @s2: string
+ * @n: number of letters to add to s1 from s2
  * Return: On success return pointer to char array
- * On error, or s1,s2 == NULL, return NULL
+ * On error, return NULL
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-    char * retptr;
-    unsigned int size_1 = _strlen(s1);
-    unsigned int size_2 = _strlen(s2);
-    if (n < size_2)
-    {
-        size_2 = n;
-    }
+	char *retptr;
+	unsigned int size_1 = _strlen(s1);
+	unsigned int size_2 = _strlen(s2);
 
-    retptr = malloc(sizeof(char) * (size_1 + size_2 + 1));
+	if (n < size_2)
+	{
+		size_2 = n;
+	}
+
+	retptr = malloc(sizeof(char) * (size_1 + size_2 + 1));
 
 	if (retptr != NULL)
 	{
