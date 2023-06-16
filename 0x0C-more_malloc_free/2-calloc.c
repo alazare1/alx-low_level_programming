@@ -8,7 +8,7 @@
  * On error, or nmemb, size == NULL, return NULL
  */
 
-void * _memset(void *s, int c,  unsigned int len)
+void * _memset(void *s, unsigned char c,  unsigned int len)
 {
     unsigned char* p=s;
     while(len--)
@@ -41,7 +41,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
         return NULL;
     }
 
-    _memset(retptr, 0, 12 * 1024);
-
+    _memset(retptr, 0, sizeof(size) * nmemb);
+    
 	return (retptr);
 }
