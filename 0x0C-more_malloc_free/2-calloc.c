@@ -10,23 +10,18 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-    char * retptr;
-    unsigned int i = 0;
+    void * retptr;
 
     if ((nmemb == 0) || (size == 0))
     {
         return NULL;
     }
 
-    void *retptr = malloc(sizeof(void *) * nmemb);
+    retptr = malloc(sizeof(size) * nmemb);
 
-    if (retptr != NULL)
+    if (retptr == NULL)
     {
-        while (i < nmemb)
-        {
-            retptr[i] = malloc(size);
-            i++;
-        }
+        return NULL;
     }
 
 	return (retptr);
