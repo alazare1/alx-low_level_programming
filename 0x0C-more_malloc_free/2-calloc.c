@@ -9,14 +9,15 @@
  * On error, return NULL
  */
 
-void * _memset(void *s, unsigned char c,  unsigned int len)
+void *_memset(void *s, unsigned char c,  unsigned int len)
 {
-	unsigned char* p=s;
-	while(len--)
+	unsigned char *p = s;
+
+	while (len--)
 	{
 		*p++ = (unsigned char)c;
 	}
-	return s;
+	return (s);
 }
 
 /**
@@ -29,18 +30,18 @@ void * _memset(void *s, unsigned char c,  unsigned int len)
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void * retptr;
+	void *retptr;
 
 	if ((nmemb == 0) || (size == 0))
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	retptr = malloc(sizeof(size) * nmemb);
 
 	if (retptr == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	_memset(retptr, 0, sizeof(size) * nmemb);
